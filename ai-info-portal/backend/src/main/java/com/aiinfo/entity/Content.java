@@ -1,6 +1,6 @@
 package com.aiinfo.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "content")
