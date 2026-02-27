@@ -23,6 +23,7 @@
 
 <script>
 import axios from 'axios'
+import { getApiUrl } from '@/config/api'
 
 export default {
   name: 'CategoryView',
@@ -52,7 +53,7 @@ export default {
 
         this.categoryName = categoryMap[this.category] || this.category
 
-        const response = await axios.get(`http://localhost:8080/api/content/category/${this.category}`)
+        const response = await axios.get(getApiUrl(`/content/category/${this.category}`))
         this.contents = response.data
       } catch (error) {
         console.error('获取内容失败:', error)

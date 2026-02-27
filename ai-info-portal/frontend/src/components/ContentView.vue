@@ -13,6 +13,7 @@
 
 <script>
 import axios from 'axios'
+import { getApiUrl } from '@/config/api'
 
 export default {
   name: 'ContentView',
@@ -33,7 +34,7 @@ export default {
   methods: {
     async fetchContent() {
       try {
-        const response = await axios.get(`http://localhost:8080/api/content/${this.slug}`)
+        const response = await axios.get(getApiUrl(`/content/${this.slug}`))
         this.content = response.data
       } catch (error) {
         console.error('获取内容失败:', error)

@@ -13,21 +13,21 @@ const routes = [
   },
   {
     path: '/category/ai_history',
-    name: 'Category',
+    name: 'AiHistory',
     component: CategoryView,
-    props: true
+    props: { category: 'AI_HISTORY' }
   },
   {
     path: '/category/popular_products',
     name: 'PopularProducts',
     component: CategoryView,
-    props: true
+    props: { category: 'POPULAR_PRODUCTS' }
   },
   {
     path: '/category/ai_encyclopedia',
     name: 'AiEncyclopedia',
     component: CategoryView,
-    props: true
+    props: { category: 'AI_ENCYCLOPEDIA' }
   },
   {
     path: '/content/:slug',
