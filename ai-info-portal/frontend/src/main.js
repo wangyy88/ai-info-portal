@@ -12,8 +12,20 @@ const routes = [
     component: Home
   },
   {
-    path: '/category/:category',
+    path: '/category/ai_history',
     name: 'Category',
+    component: CategoryView,
+    props: true
+  },
+  {
+    path: '/category/popular_products',
+    name: 'PopularProducts',
+    component: CategoryView,
+    props: true
+  },
+  {
+    path: '/category/ai_encyclopedia',
+    name: 'AiEncyclopedia',
     component: CategoryView,
     props: true
   },

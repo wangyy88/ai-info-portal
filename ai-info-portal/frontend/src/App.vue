@@ -9,13 +9,13 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/" class="nav-brand">AI Info Portal</RouterLink>
         <ul class="nav-menu">
           <li class="nav-item">
-            <RouterLink to="/category/AI_HISTORY" class="nav-link">AI发展史</RouterLink>
+            <RouterLink to="/category/ai_history" class="nav-link">AI发展史</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/category/POPULAR_PRODUCTS" class="nav-link">热门产品</RouterLink>
+            <RouterLink to="/category/popular_products" class="nav-link">热门产品</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/category/AI_ENCYCLOPEDIA" class="nav-link">AI名称百科</RouterLink>
+            <RouterLink to="/category/ai_encyclopedia" class="nav-link">AI名称百科</RouterLink>
           </li>
         </ul>
       </div>

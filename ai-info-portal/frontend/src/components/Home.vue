@@ -9,17 +9,17 @@
 
     <section class="categories">
       <div class="card-grid">
-        <router-link to="/category/AI_HISTORY" class="card">
+        <router-link to="/category/ai_history" class="card">
           <h3>AI发展史</h3>
           <p>了解人工智能从诞生到现在的重大事件和里程碑</p>
         </router-link>
 
-        <router-link to="/category/POPULAR_PRODUCTS" class="card">
+        <router-link to="/category/popular_products" class="card">
           <h3>热门产品</h3>
           <p>探索当前市场上最受欢迎的人工智能产品和服务</p>
         </router-link>
 
-        <router-link to="/category/AI_ENCYCLOPEDIA" class="card">
+        <router-link to="/category/ai_encyclopedia" class="card">
           <h3>AI名称百科</h3>
           <p>查阅各种人工智能相关术语和技术名词的解释</p>
         </router-link>
