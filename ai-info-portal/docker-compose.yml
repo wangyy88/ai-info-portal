@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: ai-info-backend
+    restart: unless-stopped
+    expose:
+      - "9004"
+    networks:
+      - ai-info-network
+
+  frontend:
+    build: ./frontend
+    container_name: ai-info-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - ai-info-network
+
+networks:
+  ai-info-network:
+    driver: bridge
